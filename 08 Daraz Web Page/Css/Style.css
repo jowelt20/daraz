@@ -1,0 +1,356 @@
+/*===================================Font Family Start=======================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/*===================================Font Family End=======================*/
+/*===================================Common Css Start=======================*/
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+body{
+   background: #F5F5F5; 
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;vertical-align: middle;
+}
+
+.container{
+    width: 1265px;
+    margin: 0px auto;
+}
+/*===================================Common Css End=======================*/
+/*===================================Menuber Start=======================*/
+#menuber{
+    background: #F85606;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.menuAnd_apps_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuAnd_apps_row .menu-item ul{
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.menuAnd_apps_row .menu-item ul li a{
+ font-size: 12px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+ color: #fff;
+ padding-top: 9px;
+ transition: all linear .3s;
+}
+
+.menuAnd_apps_row .menu-item ul li a:hover{
+    color: rgb(233, 221, 221);
+}
+
+.logoAnd-text{
+    display: flex;
+    gap: 7px;
+    background:#0000003d;
+    padding: 9px;
+    border-radius: 6px;
+}
+
+.logoAnd-text img{
+    width: 20px;
+}
+
+.apps .logoAnd-text .hover-text{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.logo-text-hover{
+    position: relative;
+    display: inline-block;
+}
+
+.hover-image{
+    display: none;
+    position: absolute;
+    top: 99%;
+    left: 0;
+
+}
+.apps .logo-text-hover .hover-image{
+    width: 100%;
+}
+
+
+.hover-text:hover + .hover-image{
+    display: block;
+    border-radius: 9px;
+}
+
+.main-menu-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.main-logo img{
+    width:120px;
+    height: 48px;
+}
+
+.search-option{
+    position: relative;
+}
+
+.search-option input{
+    width: 746px;
+    height: 38px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    top: 0px;
+    right: 9px;
+    background: #FFE1D2;
+    padding:6px 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FCA579;
+}
+
+.login a{
+    width: 77px;
+    height: 40px;
+    background:transparent;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    position: relative;
+    transition: all linear .3s;
+}
+
+.login a:hover{
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.login a::after{
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    left: 84px;
+    top: 15px;
+}
+
+.signup a{
+    width: 77px;
+    height: 40px;
+    background:transparent;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    transition: all linear .3s;
+}
+
+.signup a:hover{
+    background: rgba(0, 0, 0, 0.16);
+}
+.others{
+    display: flex;
+    gap:10px;
+}
+
+.cart{
+    font-size: 20px;
+}
+/*===================================Menuber End=======================*/
+/*===================================Banner Start=======================*/
+#banner{
+    padding-top: 15px;
+}
+
+.banner-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-text{
+    width: 238px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #ffffffe5;
+}
+
+.banner-text a{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding:8px 15px;
+    display: block;
+}
+
+.banner-text a:hover{
+    color: #F85606;
+}
+
+.banner-text a span{
+    padding-right: 6px;
+}
+
+.bannerPhoto{
+    width: 83%;
+}
+
+.bannerPhoto img{
+    border-radius: 15px;
+    cursor: pointer;
+}
+/*===================================Banner End=======================*/
+/*===================================Safer to Daraz Line Start=======================*/
+#safeTo-daraz{
+    background:#fff1eb;
+    width: 100%;
+    padding-top: 12px;
+}
+
+.safe-line{
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    transition: all linear .3s;
+}
+
+.safe-line:hover{
+    background: #FFE8DE;
+    
+}
+
+.safe-line ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.safe-line ul li a{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: black;
+    position: relative;
+}
+
+.safe-line ul li a::after{
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: rgba(28, 27, 27, 0.3);
+    position: absolute;
+    left: -11px;
+    top: 7px;
+}
+
+.safe-line ul li a span img{
+    width: 22px;
+   margin-right: 6px;
+   text-align: center;
+}
+
+.none::after{
+    display: none;
+}
+/*===================================Safer to Daraz Line End=======================*/
+/*===================================Font Family Start=======================*/
+#image-box{
+    background: #ffffff;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+.image-box-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-box-row .image-col{
+    width: 149px;
+    position: relative;
+    text-align: center;
+}
+
+.image-box-row .image-col::after{
+    content: '';
+    width: 1px;
+    height: 35px;
+    background: #d7d7d7;
+    position: absolute;
+    left: 170px;
+    top: 27px;
+}
+
+.image-box-row .image-col img {
+    width: 80px;
+    cursor: pointer;
+}
+
+.image-text a{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    transition: all linear .3s;
+}
+
+.image-text a:hover{
+    color: #F85606;
+}
+/*===================================Font Family End=======================*/
+/*===================================Font Family Start=======================*/
+
+/*===================================Font Family End=======================*/
+/*===================================Font Family Start=======================*/
+
+/*===================================Font Family End=======================*/
+/*===================================Font Family Start=======================*/
+
+/*===================================Font Family End=======================*/
+/*===================================Font Family Start=======================*/
+
+/*===================================Font Family End=======================*/
